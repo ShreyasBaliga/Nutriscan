@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/home/shreyas/Projects/flutterProjects/Nutriscan/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "C:\\Users\\I524760\\Desktop\\Personal\\Nutriscan\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/home/shreyas/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/4962d0dfe4f6f5d872e7cf9176bf5cae/res/values-zh-rTW/values.xml",
+                    "source": "C:\\Users\\I524760\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\687767bdf5e0b9caeb3fcc37c6c810ab\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "161",
-                        "endOffsets": "412"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "10",
+                        "startLines": "20",
                         "startColumns": "4",
-                        "startOffsets": "1127",
-                        "endColumns": "161",
-                        "endOffsets": "1284"
+                        "startOffsets": "2413",
+                        "endColumns": "100",
+                        "endOffsets": "2509"
                     }
                 },
                 {
-                    "source": "/home/shreyas/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/fecccc9b7c0a44f6613cc390a069568f/res/values-zh-rTW/values.xml",
+                    "source": "C:\\Users\\I524760\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-base-16.0.1.aar\\c68977f57d989aa0871bfaf1b0ec15f7\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "/home/shreyas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/932f5be12a7b41f1f0a791fce6e12aad/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\I524760\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.1.0.aar\\eb8de70e002fe20018d9449670225759\\res\\values-zh-rTW\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "161",
+                        "endOffsets": "412"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "10",
                         "startColumns": "4",
-                        "startOffsets": "2413",
-                        "endColumns": "100",
-                        "endOffsets": "2509"
+                        "startOffsets": "1127",
+                        "endColumns": "161",
+                        "endOffsets": "1284"
                     }
                 }
             ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/shreyas/Projects/flutterProjects/Nutriscan/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "C:\\Users\\I524760\\Desktop\\Personal\\Nutriscan\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "/home/shreyas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/932f5be12a7b41f1f0a791fce6e12aad/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "C:\\Users\\I524760\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\687767bdf5e0b9caeb3fcc37c6c810ab\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -77,7 +77,7 @@ class UserOptionsState extends State<UserOptions> {
 
     GoogleSignInAccount googleSignInAccount = await _gSignIn.signIn();
     GoogleSignInAuthentication authentication =
-    await googleSignInAccount.authentication;
+        await googleSignInAccount.authentication;
 
     final AuthCredential credential = GoogleAuthProvider.getCredential(
       accessToken: authentication.accessToken,
@@ -101,12 +101,12 @@ class UserOptionsState extends State<UserOptions> {
         user.isAnonymous,
         user.isEmailVerified,
         providerData);
-    Navigator.push(
-      context,
-      new MaterialPageRoute(
-        builder: (context) => new DetailScreen(detailsUser: details),
-      ),
-    );
+    // Navigator.push(
+    //   context,
+    //   new MaterialPageRoute(
+    //     builder: (context) => new DetailScreen(detailsUser: details),
+    //   ),
+    // );
     return user;
   }
 
@@ -126,41 +126,44 @@ class UserOptionsState extends State<UserOptions> {
     return new MyInhWidget(
         userName: userName,
         child: new Scaffold(
-          //backgroundColor: Colors.blueGrey,
+            //backgroundColor: Colors.blueGrey,
             body: new Container(
-              decoration: new BoxDecoration(
-                image: new DecorationImage(
-                  image: new AssetImage("assets/1.png"),
-                  fit: BoxFit.cover,
+          decoration: new BoxDecoration(
+            image: new DecorationImage(
+              image: new AssetImage("assets/1.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: new Center(
+            child: new Column(
+              children: [
+                new Container(height: 50.0, color: const Color(0XFF262626)),
+                new Image.asset("assets/logoimage.png"),
+                new Container(height: 30.0, color: const Color(0XFF262626)),
+                new Image.asset(
+                  "assets/logotext.png",
+                  width: 250.0,
                 ),
-              ),
-              child: new Center(
-                child: new Column(
-                  children: [
-                    new Container(height: 50.0,color: const Color(0XFF262626)),
-                    new Image.asset("assets/logoimage.png"),
-                    new Container(height: 30.0,color: const Color(0XFF262626)),
-                    new Image.asset("assets/logotext.png",width: 250.0,),
-                    new Container(height: 75.0,color: const Color(0XFF262626)),
-                    new Builder(
-                      builder: (BuildContext context) {
-                        return new Material(
-                          child: new Material(
-                            elevation: 5.0,
-                            child: GoogleSignInButton(
-                              //padding: new EdgeInsets.all(16.0),
-                              onPressed: () => _signIn(context)
-                                  .then((FirebaseUser user) => print(user))
-                                  .catchError((e) => print(e)),
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ],
+                new Container(height: 75.0, color: const Color(0XFF262626)),
+                new Builder(
+                  builder: (BuildContext context) {
+                    return new Material(
+                      child: new Material(
+                        elevation: 5.0,
+                        child: GoogleSignInButton(
+                          //padding: new EdgeInsets.all(16.0),
+                          onPressed: () => _signIn(context)
+                              .then((FirebaseUser user) => print(user))
+                              .catchError((e) => print(e)),
+                        ),
+                      ),
+                    );
+                  },
                 ),
-              ),
-            )));
+              ],
+            ),
+          ),
+        )));
   }
 }
 
@@ -183,8 +186,6 @@ class MyInhWidget extends InheritedWidget {
     return context.inheritFromWidgetOfExactType(MyInhWidget);
   }
 }
-
-
 
 class GoogleSignInButton extends StatelessWidget {
   final Function onPressed;

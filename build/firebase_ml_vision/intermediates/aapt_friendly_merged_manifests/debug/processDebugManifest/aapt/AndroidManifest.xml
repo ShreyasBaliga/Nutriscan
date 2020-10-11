@@ -2,6 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.flutter.plugins.firebasemlvision" >
 
-    <uses-sdk android:minSdkVersion="25" />
+    <uses-sdk android:minSdkVersion="16" />
 
 </manifest>
