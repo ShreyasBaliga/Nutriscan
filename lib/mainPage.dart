@@ -119,14 +119,14 @@ class _MyAppState extends State<MyApp> {
     final Completer<Size> completer = Completer<Size>();
 
     final Image image = Image.file(imageFile);
-    image.image.resolve(const ImageConfiguration()).addListener(
-      (ImageInfo info, bool _) {
-        completer.complete(Size(
-          info.image.width.toDouble(),
-          info.image.height.toDouble(),
-        ));
-      },
-    );
+    // image.image.resolve(const ImageConfiguration()).addListener(
+    //   (ImageInfo info, bool _) {
+    //     completer.complete(Size(
+    //       info.image.width.toDouble(),
+    //       info.image.height.toDouble(),
+    //     ));
+    //   },
+    // );
 
     final Size imageSize = await completer.future;
     setState(() {

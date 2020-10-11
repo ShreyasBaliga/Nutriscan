@@ -1,4 +1,0 @@
-#Fri Feb 22 01:21:32 IST 2019
-base.0=/home/shreyas/Projects/AndroidStudioProjects/imagelabeling/imagelabeling/build/app/intermediates/transforms/dexMerger/debug/10
-path.0=classes.dex
-renamed.0=classes.dex

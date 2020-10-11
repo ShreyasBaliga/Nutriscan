@@ -1,12 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-
 class Record {
   final int weight;
   final int height;
   final int maxCal;
   final int curCal;
-
 
   final DocumentReference reference;
 
@@ -23,6 +21,3 @@ class Record {
   Record.fromSnapshot(DocumentSnapshot snapshot)
       : this.fromMap(snapshot.data, reference: snapshot.reference);
 }
-
-
-
